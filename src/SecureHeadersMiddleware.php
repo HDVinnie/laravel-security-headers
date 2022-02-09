@@ -11,7 +11,7 @@ class SecureHeadersMiddleware
     /**
      * Handle an incoming request.
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
 
