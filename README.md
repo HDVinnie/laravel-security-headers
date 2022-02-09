@@ -6,7 +6,7 @@
 Install using composer
 
 ```sh
-composer require HDVinnie/laravel-security-headers
+composer require hdvinnie/laravel-security-headers
 ```
 
 Add service provider in `config/app.php` ( laravel version < 5.5 )
