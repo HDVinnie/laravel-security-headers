@@ -1,0 +1,26 @@
+<?php
+
+namespace HDVinnie\SecureHeaders;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+class SecureHeadersMiddleware
+{
+    /**
+     * Handle an incoming request.
+     */
+    public function handle(Request $request, Closure $next): Response
+    {
+        $response = $next($request);
+
+        $headers = (new SecureHeaders(\config('secure-headers', [])))->headers();
+
+        foreach ($headers as $key => $value) {
+            $response->headers->set($key, $value, true);
+        }
+
+        return $response;
+    }
+}
