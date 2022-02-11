@@ -1,5 +1,10 @@
 # laravel-security-headers
  Security related headers to HTTP responses in Laravel
+ 
+ [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[![Software License][ico-license]](LICENSE)
+ [![Packagist](https://img.shields.io/packagist/v/hdvinnie/laravel-security-headers)](https://packagist.org/packages/hdvinnie/laravel-security-headers/)
+[![Packagist Downloads](https://img.shields.io/packagist/dm/hdvinnie/laravel-security-headers.svg?label=packagist%20downloads)](https://packagist.org/packages/hdvinnie/laravel-security-headers)
 
 ## Installation
 
