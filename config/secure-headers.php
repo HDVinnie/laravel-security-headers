@@ -86,6 +86,24 @@ return [
 
     'referrer-policy' => 'no-referrer',
 
+    /**
+     * Cross-Origin-Embedder-Policy
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy
+     *
+     * Available Value: 'unsafe-none', 'require-corp', 'credentialless'
+     */
+    'cross-origin-embedder-policy' => 'require-corp',
+
+    /**
+     * Cross-Origin-Opener-Policy
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy
+     *
+     * Available Value: 'unsafe-none', 'same-origin-allow-popups', 'same-origin'
+     */
+    'cross-origin-opener-policy' => 'same-origin',
+
     /*
      * Clear-Site-Data
      *
